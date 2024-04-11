@@ -1,5 +1,10 @@
 @import url(variables.css);
 
+@font-face {
+    font-family: Fuente1;
+    src: url('../storage/font/Bitter/Bitter-ExtraBold.ttf') format('truetype');
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -8,4 +13,20 @@
 
 body{
     background: var(--color-prymari);
+}
+
+#sun{
+    margin-top: 2%;
+}
+
+#fondo{
+    font-family: "Fuente1", sans-serif;
+    width: 52%;
+    float: right;
+    margin-right: 6%;
+}
+
+#title{
+    font-size: 700%;
+    color: #ffff;
 }
