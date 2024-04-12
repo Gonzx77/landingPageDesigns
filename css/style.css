@@ -1,11 +1,73 @@
 @import url(variables.css);
 
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url("../storage/font/Avenir/AvenirLTStd-Black.otf") format("truetype");
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url("../storage/font/Avenir/AvenirLTStd-Roman.otf") format("truetype");
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: var(--color-prymari);
+#title{
+    margin-top: 4vw;
+    text-align: center;
+    font-family: "AvenirHeavy", sans-serif;
+    color: #323232;
+    font-size: 4vw;
+}
+#title1{
+    margin-top: 1vw;
+    text-align: center;
+    font-family: "AvenirRoman", sans-serif;
+    color: #323232;
+    font-size: 1.6vw;
+}
+
+#button{
+    padding: 1vw;
+    color: #ffffff;
+    font-size: 1vw;
+    text-align: center;
+    font-family: "AvenirRoman", sans-serif;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    width: 8vw;
+    margin-top: 2vw;
+    border-radius: 1vw;
+    display: inline-block;
+    background-color: #323232;
+}
+
+
+
+
+
+.grid-container {
+    margin-top: 6vw;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 111, 111, 0.8);
+    text-align: rgba(255, 173, 173, 0.8);
+    padding: 20px;
+    font-size: 30px;
 }
