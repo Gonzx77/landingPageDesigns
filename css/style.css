@@ -1,5 +1,14 @@
 @import url(variables.css);
 
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(../storage/font/Avenir/AvenirLTStd-Black.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(../storage/font/Avenir/AvenirLTStd-Roman.otf);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -9,14 +18,83 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1vw;
     padding: 1vw;
 }
 
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid black;
     text-align: center;
-    font-size: 30px;
+}
+
+
+#title{
+    margin-top: 6vw;
+    margin-left: 3vw;
+    text-align: left;
+    font-size: 3.6vw;
+    font-family: "AvenirHeavy", sans-serif;
+}
+
+#header{
+    color: #323232;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    text-align: left;
+    font-size: 1.75vw;
+    font-family: "AvenirRoman", sans-serif;
+}
+#header2{
+    color: #c1c1c1;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    text-align: left;
+    font-size: 2vw;
+    font-family: "AvenirHeavy", sans-serif;
+}
+
+.button{
+    transition: 0.2s;
+    float: left;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    margin-bottom: 6vw;
+    width: 7vw;
+    border-radius: 1vw;
+    background-color: #323232;
+}
+.button:hover{
+    transition: 0.2s;
+    float: left;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    margin-bottom: 6vw;
+    width: 7vw;
+    border-radius: 1vw;
+    background-color: #4f964a;
+}
+
+#button{
+    font-size: 1vw;
+    font-family: "AvenirRoman", sans-serif;
+    padding: 0.6vw;
+    color: #ffffff;
+}
+
+
+#img1{
+    border-radius: 2vw;
+    width: 25vw;
+    margin-top: 2vw;
+}
+#img2{
+    border-radius: 2vw;
+    width: 25vw;
+    margin-top: 12vw;
+}
+#img3{
+    border-radius: 2vw;
+    width: 22vw;
+    margin-bottom: 4vw;
 }
