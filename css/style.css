@@ -1,11 +1,30 @@
 @import url(variables.css);
 
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(../storage/font/Avenir/AvenirLTStd-Black.otf);
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: var(--color-prymari);
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+    padding: 1vw;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+}
+
+.item2{
+    grid-row: 2;
+    grid-column: 1/ span 2;
 }
