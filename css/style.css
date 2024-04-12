@@ -57,17 +57,30 @@
 
 
 .grid-container {
-    margin-top: 6vw;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 10vw;
     gap: 10px;
-    padding: 10px;
 }
 
 .grid-item {
+    transition: 0.2s;
+    border-radius: 2vw;
     background-color: rgba(255, 111, 111, 0.8);
     text-align: rgba(255, 173, 173, 0.8);
-    padding: 20px;
     font-size: 30px;
+}
+.grid-item:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+    border-radius: 2vw;
+    background-color: rgba(255, 111, 111, 0.8);
+    text-align: rgba(255, 173, 173, 0.8);
+    font-size: 30px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
 }
