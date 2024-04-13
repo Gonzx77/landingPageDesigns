@@ -48,7 +48,7 @@
 #header2{
     color: #c1c1c1;
     margin-top: 2vw;
-    margin-left: 5vw;
+    margin-left: 4vw;
     text-align: left;
     font-size: 2vw;
     font-family: "AvenirHeavy", sans-serif;
@@ -95,6 +95,6 @@
 }
 #img3{
     border-radius: 2vw;
-    width: 22vw;
+    width: 25vw;
     margin-bottom: 4vw;
 }
