@@ -1,5 +1,20 @@
 @import url(variables.css);
 
+@font-face {
+    font-family: "PFBold";
+    src: url(../storage/font/playfair/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: "WSRegular";
+    src: url(../storage/font/worksans/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "WSMedium";
+    src: url(../storage/font/worksans/WorkSans-Medium.ttf);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +27,158 @@
     gap: 1vw;
 }
 
-.item{
-    border: 1px solid black;
+.item2{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#img1{
+    margin-top: 4vw;
+    margin-left: 4vw;
+    width: 6vw;
+}
+
+#title{
+    color: #050505;
+    font-size: 4vw;
+    margin-top: 4vw;
+    margin-left: 5vw;
+}
+
+#content{
+    color: #333333;
+    font-size: 1.7vw;
+    margin-top: 4vw;
+    margin-left: 5vw;
+    font-family: "WSRegular", sans-serif;
+}
+
+#b1{
+    display: inline-block;
+    background-color: #050505;
+    margin-top: 4vw;
+    margin-left: 5vw;
+    border-radius: 1vw;
+    width: 10vw;
+}
+#bt1{
+    font-size: 1vw;
+    text-align: center;
+    font-family: "WSMedium", sans-serif;
+    padding: 1vw;
+    color: #ffffff;
+}
+
+#b2{
+    transition: 0.2s;
+    display: inline-block;
+    background-color: #ffffff;
+    margin-top: 4vw;
+    margin-left: 2vw;
+    border-radius: 1vw;
+    width: 10vw;
+    border: 0.1vw solid #333333;
+}
+#b2:hover{
+    transition: 0.2s;
+    display: inline-block;
+    background-color: #685FD4;
+    margin-top: 4vw;
+    margin-left: 2vw;
+    border-radius: 1vw;
+    width: 10vw;
+    border: 0.1vw solid #333333;
+}
+#bt2{
+    font-size: 1vw;
+    text-align: center;
+    font-family: "WSMedium", sans-serif;
+    padding: 1vw;
+    color: #333333;
+}
+
+.grid-info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2vw;
+    border-radius: 1vw;
+    border: 0.1vw solid #333333;
+}
+
+.info-item{
+    font-size: 1.2vw;
+    font-family: "WSRegular", sans-serif;
+    margin: 1vw;
+}
+.icon{
+    width: 1.6vw;
+}
+
+
+#fondo{
+    position: absolute;
+    width: 60%;
+}
+#fondo2{
+    z-index: -1;
+    margin-top: 16vw;
+    margin-left: 16vw;
+    position: absolute;
+    width: 40%;
+}
+#fondo3{
+    z-index: -1;
+    position: absolute;
+    width: 60%;
+    margin-bottom: 12vw;
+    margin-right: 9vw;
+}
+
+#star1{
+    width: 11vw;
+    z-index: +1;
+    position: absolute;
+    margin-bottom: 42vw;
+    margin-right: 38vw;
+}
+
+#star2{
+    position: absolute;
+    width: 5vw;
+    z-index: +1;
+    margin-bottom: 23vw;
+    margin-right: 20vw;
+}
+
+#star3{
+    margin-top: 26vw;
+    margin-left: 19vw;
+    width: 8vw;
+    position: absolute;
+    z-index: +1;
+}
+
+.data{
+    margin-left: 21vw;
+    margin-bottom: 28vw;
+    border-radius: 1vw;
+    z-index: +1;
+    position: absolute;
+    background-color: #685FD4;
+}
+.data2{
+    margin-right: 26vw;
+    margin-top: 30vw;
+    border-radius: 1vw;
+    z-index: +1;
+    position: absolute;
+    background-color: #685FD4;
+}
+.datat{
+    padding: 0.8vw;
+    color: #ffffff;
+    font-size: 1vw;
+    font-family: "WSRegular", sans-serif;
 }
