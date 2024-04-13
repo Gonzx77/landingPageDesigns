@@ -1,11 +1,59 @@
 @import url(variables.css);
 
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(../storage/font/Avenir/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(../storage/font/Avenir/AvenirLTStd-Roman.otf);
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: var(--color-prymari);
+#title{
+    color: #252525;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    font-size: 6vw;
+    font-family: "AvenirHeavy", sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5vw;
+}
+
+.item{
+    text-align: center;
+}
+
+
+.img{
+    width: 100%;
+}
+
+.number{
+    text-align: left;
+    opacity: 55%;
+    color: #252525;
+    font-size: 3vw;
+    font-family: "AvenirHeavy", sans-serif;
+}
+
+.content{
+    font-size: 1.8vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    text-align: left;
+    opacity: 80%;
+    color: #252525;
+    font-family: "AvenirRoman", sans-serif;
 }
