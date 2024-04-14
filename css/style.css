@@ -1,5 +1,18 @@
 @import url(variables.css);
 
+@font-face {
+    font-family: "WSBold";
+    src: url(../storage/font/worksans/WorkSans-Bold.ttf);
+}
+@font-face {
+    font-family: "WSLight";
+    src: url(../storage/font/worksans/WorkSans-Light.ttf);
+}
+@font-face {
+    font-family: "WSMedium";
+    src: url(../storage/font/worksans/WorkSans-Medium.ttf);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,5 +20,87 @@
 }
 
 body{
-    background: var(--color-prymari);
+    background-color: #9C2004;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item1{
+    display: flex;
+    justify-content: center;
+}
+
+.center{
+    margin: 0 auto;
+    width: 60%;
+}
+
+#man{
+    bottom: 0;
+    width: 30vw;
+    position: absolute;
+}
+
+#circle{
+    bottom: 0;
+    margin-bottom: 8vw;
+    width: 32vw;
+    z-index: -1;
+    position: absolute;
+}
+
+#points{
+    margin-right: 20vw;
+    margin-top: 6vw;
+    width: 12vw;
+    z-index: -1;
+    position: absolute;
+}
+
+#points2{
+    margin-left: 22vw;
+    margin-top: 34vw;
+    width: 12vw;
+    z-index: -1;
+    position: absolute;
+}
+
+#title{
+    margin-top: 9vw;
+    font-size: 5vw;
+    color: #ffffff;
+    font-family: "WSBold", sans-serif;
+    margin-bottom: 2vw;
+}
+
+#header{
+    font-size: 1.4vw;
+    font-family: "WSLight", sans-serif;
+    color: #ffff;
+    margin-bottom: 2vw;
+}
+
+.button{
+    transition: 0.2s;
+    width: 10vw;
+    border-radius: 1.4vw;
+    display: inline-block;
+    background-color: #E5B94B;
+}
+.button:hover{
+    transition: 0.2s;
+    width: 10vw;
+    border-radius: 1.4vw;
+    display: inline-block;
+    background-color: #ffffff;
+}
+
+#button{
+    text-align: center;
+    margin: 1vw;
+    font-size: 1.4vw;
+    font-family: "WSMedium", sans-serif;
 }
