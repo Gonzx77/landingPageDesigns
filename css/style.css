@@ -1,5 +1,18 @@
 @import url(variables.css);
 
+@font-face {
+    font-family: "PoppinsBold";
+    src: url(../storage/font/poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "PoppinsRegular";
+    src: url(../storage/font/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "PoppinsSemiBold";
+    src: url(../storage/font/poppins/Poppins-SemiBold.ttf);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,5 +20,107 @@
 }
 
 body{
-    background: var(--color-prymari);
+    height: 100vh;
+    background: linear-gradient(135deg, #C8CCCF, #97A3A3);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    top: 0;
+    width: 100vw;
+    float: left;
+    position: absolute;
+}
+
+#title{
+    margin-top: 2vw;
+    margin-left: 24vw;
+    color: #363830;
+    font-size: 5vw;
+    font-family: "PoppinsBold", sans-serif;
+}
+
+#header{
+    margin-bottom: 1vw;
+    margin-left: 24vw;
+    color: #363830;
+    font-size: 1.35vw;
+    font-family: "PoppinsRegular", sans-serif;
+}
+
+
+.button{
+    border-radius: 1.8vw;
+    width: 10vw;
+    margin-left: 24vw;
+    display: inline-block;
+    background-color: #363830;
+}
+
+#button{
+    padding: 0.5vw;
+    text-align: center;
+    font-size: 1.45vw;
+    font-family: "PoppinsRegular", sans-serif;
+    color: #ffffff;
+}
+
+#img1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 14vw;
+    width: 30vw;
+}
+
+#img2{
+    position: absolute;
+    left: 0;
+    margin-top: 71.4vw;
+    margin-left: 12vw;
+    width: 25vw;
+}
+
+.list{
+    display: grid;
+    gap: 4vw;
+    padding: 3vw;
+    margin: 0 auto;
+    border-radius: 10vw;
+    background-color: #ffffff30;
+    position: absolute;
+    margin-top: 78vw;
+    margin-left: 30vw;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item{
+    width: 12vw;
+}
+
+.number{
+    width: 100%;
+    font-size: 1.6vw;
+    float: left;
+    font-family: "PoppinsSemiBold", sans-serif;
+    color: #363830;
+    margin-bottom: 1vw;
+}
+
+.barra{
+    width: 2.5vw;
+    float: left;
+    margin-bottom: 1vw;
+}
+
+.content{
+    float: left;
+    font-size: 1vw;
+    font-family: "PoppinsRegular", sans-serif;
+    color: #363830;
 }
