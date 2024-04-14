@@ -9,3 +9,14 @@
 body{
     background: var(--color-prymari);
 }
+
+.containerP{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border: 1px solid white;
+}
+
+.column{
+    padding: 2vw;
+    border: 1px solid white;
+}
