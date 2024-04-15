@@ -95,7 +95,8 @@ body{
     background-color: #ffffff30;
     position: absolute;
     margin-top: 78vw;
-    margin-left: 30vw;
+    margin-left: 20vw;
+    padding-left: 5vw;
     grid-template-columns: repeat(3, 1fr);
 }
 
