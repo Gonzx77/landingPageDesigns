@@ -1,5 +1,15 @@
 @import url(variables.css);
 
+@font-face {
+    font-family: "PoppinsBold";
+    src: url(../storage/font/poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsRegular";
+    src: url(../storage/font/poppins/Poppins-Regular.ttf);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,16 +17,115 @@
 }
 
 body{
-    background: var(--color-prymari);
+    background-color: #2F2F2F;
 }
 
 .containerP{
     display: grid;
     grid-template-columns: 40% 60%;
-    border: 1px solid white;
 }
 
 .column{
-    padding: 2vw;
-    border: 1px solid white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.column2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title1{
+    font-family: "PoppinsBold", sans-serif;
+    font-size: 5vw;
+    color: #FEC3C7;
+}
+.title2{
+    font-family: "PoppinsBold", sans-serif;
+    font-size: 5vw;
+    color: #9AD7F3;
+}
+.title3{
+    font-family: "PoppinsBold", sans-serif;
+    font-size: 5vw;
+    color: #6BDFDA;
+}
+
+#content{
+    font-family: "PoppinsRegular", sans-serif;
+    font-size: 1.8vw;
+    color: #ffffff;
+    margin-top: 2vw;
+}
+
+.button{
+    animation-name: boton;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-top: 2vw;
+    border-radius: 2vw;
+    width: 12vw;
+    background-color: #ffffff;
+}
+
+#button{
+    padding: 1vw;
+    font-family: "PoppinsRegular", sans-serif;
+    font-size: 1.8vw;
+    text-align: center;
+    color: #232323;
+}
+
+.tablaimgs{
+    width: 70%;
+    height: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image{
+    border-radius: 2.4vw;
+    transition: 0.2s;
+    width: 9vw;
+}
+
+.image:hover{
+    box-shadow: 0 0 2vw 0 black;
+    border-radius: 2.4vw;
+    transition: 0.2s;
+    transform: scale(1.1);
+    width: 9vw;
+}
+
+
+
+
+
+
+@keyframes boton {
+    0%{
+        background-color: #FEC3C7;
+    }
+    33%{
+        background-color: #9AD7F3;
+    }
+    66%{
+        background-color: #6BDFDA;
+    }
+    100%{
+        background-color: #FEC3C7;
+    }
 }
