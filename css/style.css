@@ -55,11 +55,20 @@ body{
 
 
 .button{
+    transition: 0.2s;
     border-radius: 1.8vw;
     width: 10vw;
     margin-left: 24vw;
     display: inline-block;
     background-color: #363830;
+}
+.button:hover{
+    transition: 0.2s;
+    border-radius: 1.8vw;
+    width: 10vw;
+    margin-left: 24vw;
+    display: inline-block;
+    background-color: #77663c;
 }
 
 #button{
