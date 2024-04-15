@@ -89,13 +89,15 @@ body{
 .list{
     display: grid;
     gap: 4vw;
-    padding: 3vw;
     margin: 0 auto;
     border-radius: 10vw;
     background-color: #ffffff30;
     position: absolute;
-    margin-top: 78vw;
+    margin-top: 82vw;
     margin-left: 20vw;
+    padding-right: 4vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     padding-left: 5vw;
     grid-template-columns: repeat(3, 1fr);
 }
