@@ -6,6 +6,40 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(../storage/font/avenir/AvenirLTStd-Black.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(../storage/font/avenir/AvenirLTStd-Roman.otf);
+}
+
+
 body{
-    background: var(--color-prymari);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header{
+    top: 0;
+    left: 0;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    position: absolute;
+}
+
+#title{
+    font-family: "AvenirHeavy", sans-serif;
+    color: #252525;
+    font-size: 5vw;
+}
+#text{
+    font-family: "AvenirRoman", sans-serif;
+    margin-top: 2vh;
+    font-size: 1.4vw;
 }
