@@ -41,9 +41,40 @@
     width: 80%;
 }
 .text{
-    width: 100%;
+    width: 80%;
 }
 
 #mainText{
     width: 100%;
+}
+
+#star1{
+    position: absolute;
+    z-index: +1;
+    width: 16vw;
+    margin-left: 21vw;
+    margin-top: 6vw;
+}
+#star2{
+    position: absolute;
+    z-index: +1;
+    width: 10vw;
+    margin-left: 4vw;
+    margin-top: 10vw;
+}
+#star3{
+    position: absolute;
+    z-index: +1;
+    width: 10vw;
+    right: 0;
+    margin-top: 27vw;
+    margin-right: 22vw;
+}
+#star4{
+    position: absolute;
+    z-index: +1;
+    width: 10vw;
+    right: 0;
+    margin-top: 33vw;
+    margin-right: 4vw;
 }
