@@ -6,6 +6,44 @@
     box-sizing: border-box;
 }
 
-body{
-    background: var(--color-prymari);
+
+.mainGrid{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid black;
+}
+
+.column{
+    position: relative;
+    border: 1px solid red;
+}
+
+.element{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 1px solid green;
+}
+
+#C1{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+#C2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img{
+    width: 80%;
+}
+
+#header{
+    position: absolute;
+    bottom: 0;
+    width: 60%;
 }
