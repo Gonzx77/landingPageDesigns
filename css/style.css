@@ -15,11 +15,19 @@
 }
 
 .column{
+    position: relative;
     border: 1px solid red;
 }
 
 .element{
+    position: relative;
     border: 1px solid green;
+}
+
+#center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #C1{
@@ -28,8 +36,22 @@
     grid-template-rows: 60% 40%;
 }
 
+#C2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #C3{
     position: relative;
     display: grid;
     grid-template-rows: 40% 60%;
+}
+
+.bgImg{
+    height: 90%;
+}
+
+#img3{
+    width: 70%;
 }
