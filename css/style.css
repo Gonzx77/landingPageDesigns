@@ -57,3 +57,18 @@
     width: 50%;
     position: absolute;
 }
+
+.star{
+    z-index: +1;
+    position: absolute;
+}
+
+#s1{
+    margin-left: 27vw;
+    margin-top: 12vh;
+}
+
+#s2{
+    margin-left: 76vw;
+    margin-top: 31vh;
+}
