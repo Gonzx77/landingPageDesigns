@@ -6,6 +6,30 @@
     box-sizing: border-box;
 }
 
-body{
-    background: var(--color-prymari);
+.mainGrid{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black;
+}
+
+.column{
+    border: 1px solid red;
+}
+
+.element{
+    border: 1px solid green;
+}
+
+#C1{
+    position: relative;
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+#C3{
+    position: relative;
+    display: grid;
+    grid-template-rows: 40% 60%;
 }
