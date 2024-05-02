@@ -13,6 +13,10 @@
     src: url(../storage/font/poppins/Poppins-SemiBold.ttf);
 }
 
+body{
+    background-color: #f2f2f2;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -21,13 +25,11 @@
 
 .center{
     width: 100vw;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
 }
 
 .textContent{
-    border: 1px solid green;
     width: 60%;
     text-align: center;
 }
@@ -59,7 +61,6 @@
 }
 
 .gallery{
-    margin-top: 160px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -76,4 +77,37 @@
 
 .img{
     width: 100%;
+}
+
+
+.label{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: #ffffff;
+    width: 60%;
+    transform: translate(0px, 60px);
+}
+
+.labelTitle{
+    font-family: "AvenirHeavy", sans-serif;
+    font-size: 20px;
+    color: var(--color-1);
+}
+
+.labelText{
+    margin-top: 10px;
+    font-family: "AvenirRoman", sans-serif;
+    font-size: 16px;
+    color: var(--color-1-70);
+}
+
+.labelElement{
+    text-align: left;
+}
+
+.line{
+    width: 60px;
 }
