@@ -11,17 +11,14 @@
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid black;
 }
 
 .column{
     position: relative;
-    border: 1px solid red;
 }
 
 .element{
     position: relative;
-    border: 1px solid green;
 }
 
 #center{
@@ -54,4 +51,9 @@
 
 #img3{
     width: 70%;
+}
+
+.text{
+    width: 50%;
+    position: absolute;
 }
